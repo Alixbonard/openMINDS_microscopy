@@ -1,0 +1,11 @@
+{
+    "_type": "microscopy: microprismUsage",
+    "_extends": "/core/schemas/research/deivceUsage.schema.tpl.json", 
+    "required": [],
+    "properties": {
+        "opticalInterfaceMedium": {
+            "_instruction": "Add medium between prism face and tissue.",
+            "_linkedCategories": "chemicals:chemicalMixture" 
+        }
+    }
+}
