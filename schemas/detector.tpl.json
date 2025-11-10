@@ -1,0 +1,23 @@
+{
+    "_type": "microscopy: detector",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": [
+        "quantumEfficiency",
+        "bitDepth"
+   ],
+    "properties": {
+        "quantumEfficiency": {
+            "type": "float",
+            "_instruction": "Enter fraction of photons detected at peak wavelength (0-1 or %)"
+        }, 
+        "bitDepth": {
+            "type": "integer",
+            "_instruction": "Add bit depth of the detector's analog-to-digital conversion."
+        },
+        "readNoise": {
+            "type": "float",
+            "_instruction": "Add read-out noise of the detector, usually in electron microscope (rms)."
+        }
+
+    }
+}
