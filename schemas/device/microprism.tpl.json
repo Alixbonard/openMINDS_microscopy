@@ -8,7 +8,7 @@
     ],
     "properties": {
         "material": {
-            "_instruction": "Add microprims optical material.",
+            "_instruction": "Add microprism optical material.",
             "_linkedCategories": "chemicals:chemicalMixture" 
         },
         "dimensions": {
