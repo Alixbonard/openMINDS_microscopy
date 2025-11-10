@@ -1,0 +1,24 @@
+{
+    "_type": "microscopy: objectiveLens",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": [
+        "magnification",
+        "numericalAperture"
+    ],
+    "properties": {
+        "magnification": {
+            "type": "string",
+            "_instruction": "Add nominal magnification of the objective (e.g., 16x, 20x)."
+        },
+        "numericalAperture": {
+            "type": "float",
+            "minItems": 0,
+            "maxItems": 2,
+            "_instruction": "Add numerical aperture indicating light-gathering ability (NA=n⋅sin(θ))."
+        },
+        "workingDistance": {
+            "_instruction": "Add working distance of the lens, typically in millimeters.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        }
+    }
+}
