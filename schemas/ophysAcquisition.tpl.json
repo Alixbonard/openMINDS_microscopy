@@ -1,0 +1,64 @@
+{
+    "_type": "microscopy: ophysAcquisition",
+    "_extends": "/core/schemas/research/experimentalAcitivity.schema.tpl.json", 
+    "required": [
+        "imagingMode",
+        "setup",
+        "frameRate",
+        "fieldOfView", 
+        "pixelSize"
+    ],
+    "properties": {
+        "imagingMode": {
+            "type": "string",
+            "_instruction": "Enter optical imaging modality used during acquisition.", 
+            "_linkedCategories": "controlledTerms:?" 
+        }, 
+        "setup": {
+            "_instruction": "Add classification of the indicator.",
+            "_linkedCategories": [
+                "microscopy:OphysDevice", 
+                "microscopy:OphysDeviceUsage"
+            ]
+        },
+        "frameRate": {
+            "_instruction": "Add imaging frame rate corresponding to the number of frames acquired per second",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "fieldOfView": {
+            "_instruction": "Add spatial extent of the umaged region in micrometers.",
+            "_linkedCategories": "sands:mathematicalShapes"
+        },
+        "pixelSize": {
+            "_instruction": "Add effective sampling size of each pixel along x, y, (and optional z) dimensions in micrometers.",
+            "_linkedCategories": [
+                "core:QuantitativeValueArray", 
+                "core: optional z ? "
+            ]
+        }, 
+        "scanPattern": {
+            "_instruction": "Add scanner pattern to traverse the sample.",
+            "_linkedCategories": "controlledTerms:?"
+        },
+        "scanningMode": {
+            "_instruction": "Add scanner mechanism or readout type.",
+            "_linkedCategories": "controlledTerms:?"
+        },
+        "zoomFactor": {
+            "type": "float",
+            "_instruction": "Add dimensionless zoom setting applied on the microscope optics (affects FOV and pixel size)."
+        },
+        "numberOfPlane": {
+            "type": "integer",
+            "_instruction": "Number of imaging planes or mulpiplane or volumetric imaging acquired in one session."
+        },
+        "planeSepraration": {
+            "_instruction": "Add distance between sucessive imaging planes in micrometer (µm).",
+            "_linkedCategories": "core:QuantitativeValue"
+        },
+        "filterWheelPositions": {
+            "_instruction": "Add filter or emission bands selected during the acquisition (e.g., 525/50 nm)",
+            "_linkedCategories": "array of strings ?"
+        }
+    }
+}
