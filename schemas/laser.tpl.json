@@ -1,0 +1,25 @@
+{
+    "_type": "microscopy: LaserUsage",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": [
+        "excitationPeak"
+    ],
+    "properties": {
+        "excitationPeak": {
+            "_instruction": "Add peak excitation wavelength in nanometers.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "tunable": {
+            "_instruction": "Indicates if the source is tunable across wavelengths.",
+            "_linkedCategories": "boolean" 
+        },
+        "pulseWidth": {
+            "_instruction": "Add pulse width (duration) of source if pulsed, in femtoseconds (fs).",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "repRate": {
+            "_instruction": "Add repetition rate of the pulsed source in megahertz (MHz).",
+            "_linkedCategories": "core:QuantitativeValue" 
+        }
+    }
+}
