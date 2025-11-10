@@ -25,7 +25,7 @@
         },
         "onKinetics": {
             "_instruction": "Add rise time (on-kinetics) of fluorescence after calcium binding, typically in milliseconds.",
-            "_linkedCategories": "core:QuantitativeValue", 
+            "_linkedCategories": "core:QuantitativeValue"
         },
         "offKinetics": {
             "_instruction": "Add decay time (off-kinetics) of fluorescence after calcium unbinding, typically in milliseconds.",
