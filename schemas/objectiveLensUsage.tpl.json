@@ -1,0 +1,19 @@
+{
+    "_type": "microscopy: objectiveLensUsage",
+    "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json", 
+    "required": [
+        "immersionMedium ?"
+    ],
+    "properties": {
+        "immersionMedium": {
+            "_instruction": "Add immersion medium between lens and sample (air, water, oil...).",
+            "_linkedCategories": "chemicals:chemicalMixture"
+
+        },
+        "correctionCollar": {
+            "_instruction": "Add setting of the objective lens correction collar, used to compensate for coverslip thickness or spherical aberrations. Typically given in millimeters.",
+            "_linkedCategories": "core:QuantitativeValue"
+
+        }
+    }
+}
