@@ -1,0 +1,6 @@
+{
+    "_type": "microscopy: grinLensUsage",
+    "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json", 
+    "required": "",
+    "properties": {}
+}
