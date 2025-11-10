@@ -1,0 +1,39 @@
+{
+    "_type": "microscopy: microprism",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": [
+        "dimensions", 
+        "prismAngleDeg",
+        "orientation"
+    ],
+    "properties": {
+        "material": {
+            "_instruction": "Add microprims optical material.",
+            "_linkedCategories": "chemicals:chemicalMixture" 
+        },
+        "dimensions": {
+            "_instruction": "Add edge/face dimensions of the prism.",
+            "_linkedCategories": "?" 
+        },
+        "prismAngleDeg": {
+            "_instruction": "Add apex or right angle spec.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "orientation": {
+            "type": "string",
+            "_instruction": "Add orientation of reflective face vs cortical layers"
+        },
+        "distanceFromSurface": {
+            "_instruction": "Add distance between prism face and pial surface (move to device implantion)",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "tissueReliefCuts": {
+            "_instruction": "Indicate the presence of relief cuts.",
+            "_linkedCategories": "boolean" 
+        },
+        "edgePolishQuality": {
+            "type": "string",
+            "_instruction": "Add quality spec of polished edges."
+        }
+    }
+}
