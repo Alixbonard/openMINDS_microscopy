@@ -1,0 +1,15 @@
+{
+    "_type": "microscopy: LaserUsage",
+    "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json", 
+    "required": [],
+    "properties": {
+        "wavelengthExcitation": {
+            "_instruction": "Add excitation wavelength(s) actually used during the acquisition, expressed in nanometers.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "laserPowerAtSample": {
+            "_instruction": "Add optical power delivered to the sample at the excitation wavelength, typically reported as median or range, in milliwatts.",
+            "_linkedCategories": "core:QuantitativeValueArray" 
+        }  
+    }
+}
