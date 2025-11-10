@@ -1,0 +1,11 @@
+{
+    "_type": "microscopy: detectorUsage",
+    "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json", 
+    "required": [],
+    "properties": {
+        "detectorGains": {
+            "_instruction": "Add gain or sensitivity settings applied to the detector(s) during acquisition (e.g., PMT voltage in volts, sCMOS gain in arbitrary units). Values should be reported per channel if multiple detectors are used.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        }  
+    }
+}
