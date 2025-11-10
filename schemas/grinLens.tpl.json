@@ -1,0 +1,23 @@
+{
+    "_type": "microscopy: microprimUsage",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": "lensDiameter",
+    "properties": {
+        "lensDiameter": {
+            "_instruction": "Add rod diameter.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "lensLength": {
+            "_instruction": "Add length of lens.",
+            "_linkedCategories": "core:QuantitativeValue"
+        },
+        "FOVAtDepth": {
+            "_instruction": "Add field of view achievable at imaging depth.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "tipShape": {
+            "_instruction": "Add tipshape",
+            "_linkedCategories": "controlledterms:?" 
+        }
+    }
+}
