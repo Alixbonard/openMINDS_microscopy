@@ -1,5 +1,5 @@
 {
-    "_type": "microscopy: microprimUsage",
+    "_type": "microscopy: grinLens",
     "_extends": "/core/schemas/research/device.schema.tpl.json", 
     "required": "lensDiameter",
     "properties": {
