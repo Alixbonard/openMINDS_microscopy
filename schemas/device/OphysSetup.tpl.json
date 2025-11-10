@@ -1,0 +1,13 @@
+{
+    "_type": "microscopy: ophysSetup",
+    "_extends": "/core/schemas/research/device.schema.tpl.json", 
+    "required": [
+        "hasPart"
+    ],
+    "properties": {
+        "hasPart": {
+            "_instruction": "Add all components, including other setups, that are part of this optical setup.", 
+            "_linkedCategories": "opticalSetupComponents" 
+        }
+    }
+}
