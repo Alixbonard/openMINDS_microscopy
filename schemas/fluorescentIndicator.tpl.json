@@ -1,0 +1,39 @@
+{
+    "_type": "microscopy: fluorescentIndicator",
+    "_extends": "/core/schemas/research/experimentalAcitivity.schema.tpl.json", 
+    "required": [
+        "name",
+        "chemicalComposition",
+        "fluorescentIndicatorTypes"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "_instruction": "Add canonical name of this fluorescent calcium indicator."
+        }, 
+        "chemicalComposition": {
+            "_instruction": "Add the underlying molecular composition of the indicator.",
+            "_linkedCategories": "chemicals:chemicalMixture" 
+        },
+        "fluorescentIndicatorTypes": {
+            "_instruction": "Add classification of the indicator.",
+            "_linkedCategories": "controlledTerms:?" 
+        },
+        "emissionPeak": {
+            "_instruction": "Add peak emission wavelength of the indicator, expressed in nanometers.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        },
+        "onKinetics": {
+            "_instruction": "Add rise time (on-kinetics) of fluorescence after calcium binding, typically in milliseconds.",
+            "_linkedCategories": "core:QuantitativeValue", 
+        },
+        "offKinetics": {
+            "_instruction": "Add decay time (off-kinetics) of fluorescence after calcium unbinding, typically in milliseconds.",
+            "_linkedCategories": "core:QuantitativeValue" 
+        }, 
+        "apparentDissociationConstant": {
+            "_instruction": "Add apparent dissociation constant (binding affinity for Ca²⁺), typically in micromolar (µM).",
+            "_linkedCategories": "core:QuantitativeValue" 
+        }     
+    }
+}
